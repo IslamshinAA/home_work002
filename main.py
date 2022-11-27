@@ -4,37 +4,40 @@
 # 0,56 -> 11
 import random
 
-# number = input("Введите вещественное число: ")
-# res = 0
-# for i in number:
-#     res += int(i)
-# print(f'Сумма цифр числа {number} = {res}')
+number = input("Введите вещественное число: ")
+res = 0
+for i in number:
+    if i == ",":
+        res
+    else:
+        res += int(i)
+ print(f'Сумма цифр числа {number} = {res}')
 
 # Задайте список из n чисел последовательности (1 + 1/n)^n. Вывести в консоль сам список и сумму его элементов.
 
-# number = int(input('Введите  количество элементов: '))
-# my_list = []
-# res = 0
-# for i in range(1, number + 1):
-#     my_list.append(((1 + 1 / i) ** i))
-#     res += (1 + 1 / i) ** i
-# print(*my_list, sep= ', ')
-# print(f' Сумма элементов = {round(res, 3)}')
+number = int(input('Введите  количество элементов: '))
+my_list = []
+res = 0
+for i in range(1, number + 1):
+    my_list.append(((1 + 1 / i) ** i))
+    res += (1 + 1 / i) ** i
+print(*my_list, sep= ', ')
+print(f' Сумма элементов = {round(res, 3)}')
 
 # Реализуйте алгоритм перемешивания списка. Встроенный алгоритм SHUFFLE не использовать! Реализовать свой метод
 
-# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]#
-# my_list1 = []
-# num = 0
-# while num < len(my_list):
-#     a = random.choice(my_list)
-#     if a not in my_list1:
-#         num += 1
-#         my_list1.append(a)
-# else:
-#     num
-# print(my_list)
-# print(my_list1)
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]#
+my_list1 = []
+num = 0
+while num < len(my_list):
+    a = random.choice(my_list)
+    if a not in my_list1:
+        num += 1
+        my_list1.append(a)
+else:
+    num
+print(my_list)
+print(my_list1)
 # ___________________________________________________________
 # Написать программу, которая состоит 4 из этапов:
 # - создает список из рандомных четырех значных чисел
